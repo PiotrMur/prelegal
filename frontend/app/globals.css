@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  @page {
+    margin: 2cm;
+    size: A4;
+  }
+
+  body {
+    visibility: hidden;
+  }
+
+  #document-preview {
+    visibility: visible;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    background: #fff;
+  }
+
+  #document-preview * {
+    visibility: visible;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+}
+
+.resolved-value {
+  background: #fef9c3;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+#document-preview ol {
+  list-style: decimal;
+  padding-left: 1.5em;
+}
+
+#document-preview p {
+  margin-bottom: 0.75em;
+}
+
+#document-preview strong {
+  font-weight: 700;
+}
