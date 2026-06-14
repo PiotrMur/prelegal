@@ -11,8 +11,13 @@ vendor/
 
 # Next.js
 .next/
+frontend/out/
 out/
 build/
+
+# Go binaries
+backend/server
+backend/backend
 
 # Node
 node_modules/
